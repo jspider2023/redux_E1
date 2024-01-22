@@ -6,13 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import Axios from './component/Axios';
+import LyfeCycleInFunciton from './lifeCycleMethod/LyfeCycleInFunciton';
+import Debouncing from './lifeCycleMethod/debouncing';
+ 
 const root = ReactDOM.createRoot(document.getElementById('root'));
  
 root.render(
  
    <Provider store={store}>
     {/* <App /> */}
-     <Axios/>
+     {/* <Axios/> */}
+     {/* <LyfeCycleInFunciton/> */}
+       {/* <Debouncing/> */}
+       <App/>
    </Provider>
   
  
