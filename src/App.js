@@ -9,6 +9,7 @@ import HocCounter from "./Hoc/HocCounter";
 import Todo from "./Hoc/Todo";
 import Post from "./Hoc/Post";
 import HocSearch from "./Hoc/HocSearch";
+import LifeCycle from "./class/lifeCycle/LifeCycle";
 // import Counter from "./component/BOT/Counter";
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
       <HocCounter comp={<Counter/>} entity="blue"/>
       <HocCounter comp={<Counter/>} entity="green"/>
       <HocCounter comp={<Counter/>} entity="yellow"/> */}
-      <div className="container">
+      {/* <div className="container">
         <div className="row d-flex justify-content-center">
           <div className="col-md-6">
           <HocTodo/>
@@ -38,8 +39,8 @@ function App() {
            <PostTodo/>
           </div>
         </div>
-      </div>
-   
+      </div> */}
+      <LifeCycle name="sidhu"/>
       
       
     </>
