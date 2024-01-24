@@ -10,11 +10,15 @@ import Todo from "./Hoc/Todo";
 import Post from "./Hoc/Post";
 import HocSearch from "./Hoc/HocSearch";
 import LifeCycle from "./class/lifeCycle/LifeCycle";
+import A1 from "./ErrorHandling/A1";
+import A2 from "./ErrorHandling/A2";
+import A3 from "./ErrorHandling/A3";
+import ErrorBoundaryByClass from "./ErrorHandling/ErrorBoundaryByClass";
 // import Counter from "./component/BOT/Counter";
 
 function App() {
-  let HocTodo= HocSearch(Todo,'todos')
-  let PostTodo= HocSearch(Post,'posts')
+  let HocTodo = HocSearch(Todo, "todos");
+  let PostTodo = HocSearch(Post, "posts");
   return (
     <>
       {/* <Counter />
@@ -24,7 +28,7 @@ function App() {
       <Counter2/>
       <hr/>
       <Layout/> */}
-      <hr/>
+      <hr />
       {/* <Counter/> */}
       {/* <HocCounter comp={<Counter/>} entity="red"/>
       <HocCounter comp={<Counter/>} entity="blue"/>
@@ -40,8 +44,12 @@ function App() {
           </div>
         </div>
       </div> */}
-      <LifeCycle name="sidhu"/>
-      
+      {/* <LifeCycle name="sidhu"/> */}
+      <ErrorBoundaryByClass>
+            <A1 />
+             <A2 />
+             <A3 />
+      </ErrorBoundaryByClass>
       
     </>
   );
